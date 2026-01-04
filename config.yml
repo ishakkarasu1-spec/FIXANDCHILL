@@ -1,0 +1,63 @@
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/img"
+public_folder: "assets/img"
+
+local_backend: true
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "index.html"
+        label: "Home"
+        name: "home"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string", default: "Phone Repair & Device Buyback in Rehoboth Beach | ShoreSellDevice by Fix&Chill" }
+          - { label: "Hero Heading", name: "hero_heading", widget: "string", required: false }
+          - { label: "Hero Subheading", name: "hero_subheading", widget: "string", required: false }
+      - file: "repairs.html"
+        label: "Repairs"
+        name: "repairs"
+        fields:
+          - { label: "Intro Heading", name: "intro_heading", widget: "string", required: false }
+          - { label: "Intro Text", name: "intro_text", widget: "text", required: false }
+      - file: "sell.html"
+        label: "Device Buyback"
+        name: "sell"
+        fields:
+          - { label: "Intro Heading", name: "intro_heading", widget: "string", required: false }
+          - { label: "Intro Text", name: "intro_text", widget: "text", required: false }
+      - file: "prepaid.html"
+        label: "Prepaid Activation"
+        name: "prepaid"
+        fields:
+          - { label: "Intro Heading", name: "intro_heading", widget: "string", required: false }
+          - { label: "Intro Text", name: "intro_text", widget: "text", required: false }
+      - file: "lease.html"
+        label: "Lease-to-Own"
+        name: "lease"
+        fields:
+          - { label: "Intro Heading", name: "intro_heading", widget: "string", required: false }
+          - { label: "Intro Text", name: "intro_text", widget: "text", required: false }
+      - file: "accessories.html"
+        label: "Accessories"
+        name: "accessories"
+        fields:
+          - { label: "Intro Heading", name: "intro_heading", widget: "string", required: false }
+          - { label: "Intro Text", name: "intro_text", widget: "text", required: false }
+      - file: "warranty.html"
+        label: "Warranty & Returns"
+        name: "warranty"
+        fields:
+          - { label: "Intro Heading", name: "intro_heading", widget: "string", required: false }
+          - { label: "Intro Text", name: "intro_text", widget: "text", required: false }
+      - file: "contact.html"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { label: "Intro Heading", name: "intro_heading", widget: "string", required: false }
+          - { label: "Intro Text", name: "intro_text", widget: "text", required: false }
